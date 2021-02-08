@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>School Bus</title>
+    <link href="school-bus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bodyBus">
+       <div class="backWindow">
+       </div>
+       <div class="frontWindow">
+       </div>
+       <div class="wheel1">
+       </div>
+       <div class="wheel2">
+       </div>
+       <div class="gasBox">
+       </div>
+    </div>
+
+    <p> Back <link href=""
+</body>
+</html>
