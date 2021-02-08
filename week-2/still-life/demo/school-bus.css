@@ -1,0 +1,65 @@
+body{
+
+}
+
+.bodyBus {
+    width: 800px;
+    height: 400px;
+    background-color: #fae600;
+    border-radius: 50px;
+    position: fixed;
+    left: 350px;
+    top: 100px;
+
+}
+
+.backWindow {
+    width: 600px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+
+.frontWindow {
+    width: 50px;
+    height: 150px;
+    background: black;
+    border-radius: 50px;
+    position: relative;
+    top: -110px;
+
+}
+
+.wheel1 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+
+}
+
+.wheel2 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.gasBox {
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    top: 250px;
+    left: 800px;
+}
