@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+.bounding-box{
+    display: grid;
+    grid-template-areas: 'main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #37FFC3;
+    border: 2.5px white solid;
+}
+
+.purple {
+    background-color: #9B26F8;
+
+}
+
+.border {
+    margin: 1px;
+}
+
+.Ablock1 {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #9B26F8;
+    border-right: 40px solid transparent;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Ablock2 {
+    grid-column: 1;
+    grid-row: 2;
+    border-bottom-left-radius: 100px;
+}
+
+.Ablock3 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Ablock4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.Ablock5 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.Ablock6 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.Ablock7 {
+    grid-column: 2;
+    grid-row: 5;
+    border-bottom-left-radius: 100px;
+}
+
+.Ablock8 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+
+}
