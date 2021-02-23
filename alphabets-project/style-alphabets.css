@@ -1,4 +1,5 @@
 * {
+    background-color: #37FFC3;
     background-image: url('img/supermario.JPG');
 
 }
@@ -27,11 +28,11 @@ body {
 .bounding-box{
     display: grid;
     grid-template-areas: 'main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main';
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 80px;
     background: #37FFC3;
     border: 20px transparent solid;
     transition-property: height background;
@@ -44,11 +45,11 @@ body {
 .bounding-box:hover {
     display: grid;
     grid-template-areas: 'main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main''main main main main main main main';
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     background: #ffeb3b;
     border: 0px transparent solid;
     transition-property: height background;
