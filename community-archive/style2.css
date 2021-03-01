@@ -1,0 +1,78 @@
+body{
+	font-family: 'Vollkorn', serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	margin: 0;
+}
+
+main{
+	margin: 1rem;
+	max-width: 60%;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: normal;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.color{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+.palette{
+	display: flex;
+}
+
+.primary{
+	flex: 2;
+	background: #60D394;
+}
+
+.secondary, .tertiary{
+	flex: 1;
+}
+
+.secondary{
+	background: #FFD97D;
+}
+
+.tertiary{
+	background: #FF9B85;
+}
+
+.fourth {
+	background: #EE6055;
+}
+
+}

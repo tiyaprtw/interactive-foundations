@@ -1,0 +1,83 @@
+body{
+	font-family: 'Special Elite', cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin: 0;
+}
+
+main{
+	margin: 1rem;
+	max-width: 60%;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Averia Serif Libre', cursive;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+.color{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+.palette{
+	display: flex;
+}
+
+.primary{
+	background: #f3722c;
+}
+
+.secondary{
+	background: #f8961e;
+}
+
+.tertiary{
+	background: #f9844a;
+}
+
+.fourth {
+	background: #f9c74f;
+}
+
+.fifth {
+	background: #90be6d;
+}
+
+.sixth {
+	background: #43aa8b;
+}
+
+.seventh {
+	background: #4d908e;
+}
+
+.eight {
+	background: #577590;
+}
+
+
+
+}

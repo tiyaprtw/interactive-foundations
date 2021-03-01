@@ -1,10 +1,9 @@
 * {
-    background-color: #37FFC3;
-    background-image: url('img/supermario.JPG');
-
 }
 
 body {
+    background-color: #37FFC3;
+    background-image: url('img/super-mario');
 }
 
 .main-container{
