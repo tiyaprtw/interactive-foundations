@@ -1,0 +1,124 @@
+body{
+	font-family: 'Special Elite', cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin: 0;
+	background-color: #F4EBC0;
+}
+
+main{
+	margin: 50pt;
+	max-width: 70%;
+	margin: auto;
+	background: #F4EBC0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Averia Serif Libre', cursive;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 2.7rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+.container2 {  
+	background: #f9844a;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container3 {  
+	margin-top: 10pt;
+	background: #f9c74f;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box1 {
+	flex: 1;
+}
+
+.container4 {  
+	margin-top: 10pt;
+	background: #90be6d;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box2 {
+	flex: 1;
+}
+
+.container5 {  
+	margin-top: 10pt;
+	background: #43aa8b;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box3 {
+	flex: 1;
+}
+
+.container6 {  
+	margin-top: 10pt;
+	background: #4d908e;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box4 {
+	flex: 1;
+}
+
+
+.container7 {  
+	margin-top: 10pt;
+	background:  #577590;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box5 {
+	flex: 1;
+}
+
+.container8 {  
+	margin-top: 10px;
+	margin-bottom: 80px;
+	display: flex;
+	background: #f8961e;
+	justify-content: space-between;
+}
+
+.box6 {
+	flex: 1;
+}
+
+
+
+
+
+
+}
