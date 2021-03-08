@@ -1,7 +1,47 @@
 body {
+	font-family: 'Special Elite', cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin: 0;
+	background-color: #F4EBC0;
 
 }
 
+main{
+	margin: 50pt;
+	max-width: 70%;
+	margin: auto;
+	background: #F4EBC0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Averia Serif Libre', cursive;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
 
 section {
 	position: fixed;
