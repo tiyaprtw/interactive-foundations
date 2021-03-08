@@ -10,9 +10,11 @@ body {
 }
 
 main{
-	margin: 50pt;
-	max-width: 70%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 	margin: auto;
+	max-width: 70%;
 	background: #F4EBC0;
 }
 
@@ -43,7 +45,35 @@ h5 {
 	font-size: 1rem;
 }
 
-section {
-	position: fixed;
-	left: 100px;
+.container {
+	flex: 1;
+}
+
+.container2 {
+	flex: 1;
+	align-content: flex-start;
+}
+
+.box1 {
+	background: #f8961e;
+	border-radius: 20px;
+	height: 30px;
+	transition-property: height background;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.box1:hover {
+	height: 60px;
+	background: #f3722c;
+	transition-property: height background;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+
+
+
 }
