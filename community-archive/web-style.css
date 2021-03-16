@@ -2,23 +2,30 @@ body{
 	font-family: 'Special Elite', cursive;
 	font-weight: 500;
 	font-style: normal;
-	font-size: 18px;
-	letter-spacing: 1.5px;
-	margin: 0;
+	font-size: 16px;
+	letter-spacing: 1.25px;
+	margin: 0px;
 	background-color: #F4EBC0;
 }
 
 main{
-	margin: 50pt;
+	margin: 10pt;
 	max-width: 70%;
 	margin: auto;
 	background: #F4EBC0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5 {
 	font-family:'Averia Serif Libre', cursive;
 	font-weight: normal;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
+}
+
+h6 {
+	font-family:'Averia Serif Libre', cursive;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #e9ecef;
 }
 
 h1{
@@ -31,94 +38,297 @@ h2 {
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: 0.80rem;
 }
 
 h4 {
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: 1.3rem;
+}
+
+h6 {
+	font-size: 0.80rem;
 }
 
 .container2 {  
-	background: #f9844a;
+	background-image: url(https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL09QVE8tSW1hZ2UtMTUuanBnP210aW1lPTIwMTgxMjE0MTY1NjIw);
+	background-size: auto 50em;
 	display: flex;
 	justify-content: space-around;
+}
+
+.starter-box {
+	background: transparent;
+
 }
 
 .container3 {  
+	background-image: url(https://micrio-cdn.vangoghmuseum.nl/TZCqF/views/max/1280x1682.jpg);
+    background-position: center;
+    background-size: cover;
 	margin-top: 10pt;
-	background: #f9c74f;
 	display: flex;
+	height: 18em;
 	justify-content: space-around;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container3:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
 .box1 {
-	flex: 1;
+	background: #f9c74f;
+	flex: 1 100%;
+  	text-align: center;
+  	margin: 10px; 
+  	opacity: 0%;
+}
+
+.box1:hover {
+	opacity: 100%;
+	border-radius: 10px;
 }
 
 .container4 {  
-	margin-top: 10pt;
-	background: #90be6d;
+	background-image: url(https://micrio.vangoghmuseum.nl/iiif/TznmE/full/1280,/0/default.jpg?hash=O9DenTBG9XiFhnzsYNHWbvsTriHplBOq2vwo3OK2glM);
+	background-position: right center;
+    background-size: cover;
+	margin-top: 20pt;
 	display: flex;
+	height: 18em;
 	justify-content: space-around;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container4:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
 .box2 {
-	flex: 1;
+	flex: 1 100%;
+  	text-align:center;
+  	margin: 10px; 
+  	background: #90be6d;
+  	opacity: 0%;
+}
+
+.box2:hover {
+	opacity: 100%;
+	border-radius: 10px;
 }
 
 .container5 {  
-	margin-top: 10pt;
-	background: #43aa8b;
+	background-image: url(https://micrio.vangoghmuseum.nl/iiif/wTQHw/full/1280,/0/default.jpg?hash=ToPt1SulVg8K3i7zseCNTj7LbaF0EzLlphgOLM4jnVQ);
+	background-position: bottom center;
+    background-size: cover;
+	margin-top: 20pt;
+	height: 18em;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container5:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
 .box3 {
-	flex: 1;
+	flex: 1 100%;
+  	text-align:center;
+  	margin: 10px;
+  	background: #43aa8b;
+  	opacity: 0%;
+}
+
+.box3:hover {
+	opacity: 100%;
+	border-radius: 10px;
 }
 
 .container6 {  
-	margin-top: 10pt;
-	background: #4d908e;
+	background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/letter-from-vincent-van-gogh-to-theo-van-gogh-with-sketch-of-cicada-vincent-van-gogh.jpg);
+	background-position: center;
+	background-size: cover;
+	margin-top: 20pt;
 	display: flex;
+	height: 18em;
 	justify-content: space-around;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container6:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
 .box4 {
-	flex: 1;
+	flex: 1 100%;
+  	text-align:center;
+  	margin: 10px;
+  	background: #4d908e;
+  	opacity: 0%;
+}
+
+.box4:hover {
+	opacity: 100%;
+	border-radius: 10px;
 }
 
 
 .container7 {  
-	margin-top: 10pt;
-	background:  #577590;
+	background-image: url(https://micrio.vangoghmuseum.nl/iiif/qJRSM/full/1280,/0/default.jpg?hash=kw0JMvdYI3bRceAZYgBV6fBI6TiUqZ2Tx_Xk8ZqfXg0);
+	background-position: center;
+	background-size: cover;
+	margin-top: 20pt;
 	display: flex;
+	height: 18em;
 	justify-content: space-around;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container7:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
 .box5 {
-	flex: 1;
+	flex: 1 100%;
+  	text-align:center;
+  	margin: 10px;
+  	background:  #577590;
+  	opacity: 0%;
+}
+
+.box5:hover {
+	opacity: 100%;
+	border-radius: 10px;
 }
 
 .container8 {  
-	margin-top: 10px;
-	margin-bottom: 80px;
+	background-image: url(https://www.vangoghstudio.com/Files/6/102000/102147/FileBrowser/paintings/cafe-terrace-reproduction.jpg);
+	background-size: cover;
+	background-position: left center;
+	margin-top: 20px;
+	margin-bottom: 100px;
 	display: flex;
-	background: #f8961e;
+	height: 18em;
 	justify-content: space-between;
+	align-items: center;
+	filter: blur(2.5px);
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
+
+.container8:hover {
+	height: 25em;
+	filter: blur(0px);
+	transition-property: height;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+ }
 
 .box6 {
-	flex: 1;
+	flex: 1 100%;
+  	text-align:center;
+  	margin: 10px;
+  	background: #f8961e;
+  	opacity: 0%;
 }
 
+.box6:hover {
+	opacity: 100%;
+	border-radius: 10px;
+}
 
+.container9 {
+	display: flex;
+	margin top: 80px;
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #212529;
+}
 
+.box7 {
+    width: 481px;
+    height: 117px;
+    text-align: left;
+    margin-left: 50px;
+}
 
+.box8 {
+	width: 147px;
+	height: 147px;
+	margin-right: 50px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_-_Van_Gogh_Museum.png);
+	background-size: cover;
+}
+
+.box9 {
+	margin: 30px;
+	border-radius: 50px;
+	background-image: url(https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL09QVE8tSW1hZ2UtMTUuanBnP210aW1lPTIwMTgxMjE0MTY1NjIw);
+	background-size: auto 50em;
+	text-align: center;
+	flex: 1 10px;
+	align-content: center;
+}
+
+.box10 {
+	width: 246px;
+	height: 230px;
+	margin-left: 20px;
+	background-image: url(https://media0.giphy.com/media/QA6tgpnVIVis1cBK2S/source.gif);
+	background-size: cover;
 
 
 }
