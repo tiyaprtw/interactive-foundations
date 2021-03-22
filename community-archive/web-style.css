@@ -1,3 +1,5 @@
+
+
 body{
 	font-family: 'Special Elite', cursive;
 	font-weight: 500;
@@ -9,11 +11,6 @@ body{
 	background-color: #F4EBC0;
 }
 
-img {
-	position:absolute;
-	opacity: 70%;
-	z-index: 50;
-}
 
 main{
 	margin: 10pt;
@@ -59,6 +56,43 @@ h5 {
 h6 {
 	font-size: 0.80rem;
 }
+
+.image1 {
+	position:absolute;
+	opacity: 100%;
+	z-index: 100;
+	margin-top: -103px;
+	margin-left: 32px;
+	transition: margin-top 5s ease 2s;
+	
+}
+
+.image1:hover {
+	margin-top: -780px;
+	transition: margin-top 5s ease 2s;
+
+}
+
+.image2 {
+	position:absolute;
+	opacity: 100%;
+	z-index: 100;
+	margin-top: 618px;
+	margin-left: 48px;
+	transition: margin-top 5s ease 200ms;
+}
+
+.image2:hover {
+	margin-top: 2500px;
+	transition: margin-top 5s ease 200ms;
+
+}
+
+img {
+	width: 134%;
+}
+
+
 
 .container1 {
 	background-image: url(https://micrio.vangoghmuseum.nl/iiif/pMtwg/full/1280,/0/default.jpg?hash=1BVa-3RgkT6XhU2vkF-qFEp3vSY09x_XPtkJRjPkRag);
