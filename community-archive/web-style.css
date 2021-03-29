@@ -1,4 +1,17 @@
 
+header {
+	font-family: 'Special Elite', cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 1.25px;
+	line-height: 2em;
+	padding: 10rem;
+	margin-top: -5rem;
+	background-color: #F4EBC0;
+
+}
+
 
 body{
 	font-family: 'Special Elite', cursive;
@@ -11,11 +24,22 @@ body{
 	background-color: #F4EBC0;
 }
 
+footer {
+	font-family: 'Special Elite', cursive;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 1.25px;
+	line-height: 2em;
+	margin: auto;
+	background-color: #F4EBC0;
+	max-width: 80%;
+}
 
 main{
-	margin: 10pt;
-	max-width: 80%;
 	margin: auto;
+	margin-top: -2rem;
+	max-width: 70%;
 	background: #F4EBC0;
 }
 
@@ -29,11 +53,12 @@ h2,h6 {
 	font-family:'Averia Serif Libre', cursive;
 	font-weight: normal;
 	letter-spacing: 0px;
+	line-height: 1.5em;
 	color: #e9ecef;
 }
 
 h1{
-	font-size: 5rem;
+	font-size: 0.80rem;
 }
 
 
@@ -46,7 +71,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.7rem;
+	font-size: 2.6rem;
 }
 
 h5 {
@@ -57,41 +82,63 @@ h6 {
 	font-size: 0.80rem;
 }
 
-/*.image1 {
-	position:absolute;
-	opacity: 100%;
-	z-index: 100;
-	margin-top: -103px;
-	margin-left: 32px;
-	transition: margin-top 5s ease 2s;
-	
+.upperclicks {
+	background: transparent;
+	display: flex;
+	padding: 5px;
+	align-content: center;
+	justify-content: space-between;
 }
 
-.image1:hover {
-	margin-top: -780px;
-	transition: margin-top 5s ease 2s;
-
+.buttons {
+	flex: auto;
+	background-image: url(https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL09QVE8tSW1hZ2UtMTUuanBnP210aW1lPTIwMTgxMjE0MTY1NjIw);
+	background-size: cover;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
-.image2 {
-	position:absolute;
-	opacity: 100%;
-	z-index: 100;
-	margin-top: 618px;
-	margin-left: 48px;
-	transition: margin-top 5s ease 200ms;
+.buttons:hover {
+	background-image: url(https://www.photos-public-domain.com/wp-content/uploads/2011/12/orange-paper-texture-with-flecks.jpg);
+	transition-property: background-image;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
 
-.image2:hover {
-	margin-top: 2500px;
-	transition: margin-top 5s ease 200ms;
 
+
+
+.websitetitle{
+	padding: 3em;
+}
+
+.websitetitle2 {
+	padding: 3em;
+	text-align: center;
+}
+
+.prologue {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: -7em;
+	margin-bottom: 5em;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text1 {
+	width: 50em;
+	margin-bottom: 6.5em;
 }
 
 img {
-	width: 134%;
-}*/
-
+	width: 30em;
+	border-radius: 70em;
+	position: static;
+}
 
 .container1 {
 	background-image: url(https://micrio.vangoghmuseum.nl/iiif/pMtwg/full/1280,/0/default.jpg?hash=1BVa-3RgkT6XhU2vkF-qFEp3vSY09x_XPtkJRjPkRag);
@@ -99,21 +146,38 @@ img {
     background-size: cover;
 	margin-top: 10pt;
 	display: flex;
-	height: 18em;
+	height: 30em;
 	justify-content: space-around;
 	align-items: center;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.container1:hover {
+	background-image: url(https://micrio.vangoghmuseum.nl/iiif/apUdD/full/1280,/0/default.jpg?hash=tIKAv1iFLfl4Gy1iv8IW2E3ZQDb7juwESgvu2tFyiQQ);
+	transition-property: background-image;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+
 }
 
 
 .container2 {  
 	background-image: url(https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL09QVE8tSW1hZ2UtMTUuanBnP210aW1lPTIwMTgxMjE0MTY1NjIw);
-	background-size: auto 50em;
-	display: flex;
+	background-size: cover;
+	display: inline-block;
+	width: 11em;
+	height: 15em;
 	justify-content: space-around;
+	position: fixed;
+	margin-top: -105.7em;
 }
 
 .starter-box {
 	background: transparent;
+
 
 }
 
@@ -121,59 +185,56 @@ img {
 	background-image: url(https://micrio-cdn.vangoghmuseum.nl/TZCqF/views/max/1280x1682.jpg);
     background-position: center;
     background-size: cover;
+    z-index: 100%;
 	margin-top: 10pt;
 	display: flex;
 	height: 18em;
 	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container3:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
-}
+  }
 
 .box1 {
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: auto;
 	background: #f9c74f;
-	flex: 1 100%;
-  	text-align: center;
-  	padding: 7px;
-  	margin: 10px; 
-  	opacity: 25%;
+  	opacity: 75%;
   	border-radius: 10px;
 }
 
 .box1:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
 .container4 {  
 	background-image: url(https://micrio.vangoghmuseum.nl/iiif/TznmE/full/1280,/0/default.jpg?hash=O9DenTBG9XiFhnzsYNHWbvsTriHplBOq2vwo3OK2glM);
-	background-position: right center;
+	background-position: left center;
     background-size: cover;
 	margin-top: 20pt;
 	display: flex;
 	height: 18em;
 	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container4:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
@@ -181,17 +242,17 @@ img {
 }
 
 .box2 {
-	flex: 1 100%;
-  	text-align:center;
-  	margin: 10px; 
-  	background: #90be6d;
-  	opacity: 25%;
-  	padding: 7px;
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: 16em;
+	background: #90be6d;
+  	opacity: 85%;
   	border-radius: 10px;
 }
 
 .box2:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
@@ -204,15 +265,13 @@ img {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container5:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
@@ -220,17 +279,17 @@ img {
 }
 
 .box3 {
-	flex: 1 100%;
-  	text-align:center;
-  	margin: 10px;
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: 16em;
   	background: #43aa8b;
-  	opacity: 25%;
-  	padding: 7px;
+  	opacity: 85%;
   	border-radius: 10px;
 }
 
 .box3:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
@@ -243,15 +302,13 @@ img {
 	height: 18em;
 	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container6:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
@@ -259,17 +316,17 @@ img {
 }
 
 .box4 {
-	flex: 1 100%;
-  	text-align:center;
-  	margin: 10px;
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: auto;
   	background: #4d908e;
-  	opacity: 25%;
-  	padding: 7px;
+  	opacity: 95%;
   	border-radius: 10px;
 }
 
 .box4:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
@@ -283,15 +340,13 @@ img {
 	height: 18em;
 	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container7:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
@@ -299,39 +354,37 @@ img {
 }
 
 .box5 {
-	flex: 1 100%;
-  	text-align:center;
-  	margin: 10px;
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: 16em;
   	background:  #577590;
-  	opacity: 25%;
-  	padding: 7px;
+  	opacity: 80%;
   	border-radius: 10px;
 }
 
 .box5:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
 .container8 {  
 	background-image: url(https://www.vangoghstudio.com/Files/6/102000/102147/FileBrowser/paintings/cafe-terrace-reproduction.jpg);
-	background-size: cover;
 	background-position: left center;
-	margin-top: 20px;
-	margin-bottom: 100px;
+	background-size: cover;
+	margin-bottom: 10em;
+	margin-top: 20pt;
 	display: flex;
 	height: 18em;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	filter: blur(2px);
 	transition-duration: 500ms;
     transition-timing-function: ease;
     transition-delay: 300ms;
 }
 
 .container8:hover {
-	height: 25em;
-	filter: blur(0px);
+	height: 70em;
 	transition-property: height;
 	transition-duration: 500ms;
     transition-timing-function: ease;
@@ -339,17 +392,17 @@ img {
  }
 
 .box6 {
-	flex: 1 100%;
-  	text-align:center;
-  	margin: 10px;
+	position: absolute;
+	padding: 10px;
+	width: 55em;
+	height: 16em;
   	background: #f8961e;
-  	opacity: 25%;
-  	padding: 7px;
+  	opacity: 75%;
   	border-radius: 10px;
 }
 
 .box6:hover {
-	opacity: 100%;
+	opacity: 0%;
 	border-radius: 10px;
 }
 
@@ -389,6 +442,38 @@ img {
 	text-align: center;
 	flex: 1 10px;
 	align-content: center;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
 }
+
+
+.box9:hover {
+	background-image: url(https://www.photos-public-domain.com/wp-content/uploads/2011/12/orange-paper-texture-with-flecks.jpg);
+	transition-property: background-image;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 300ms;
+}
+
+.moreinfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.boxinfo {
+	width: 50em;
+	margin-bottom: 6.5em;
+}
+
+.boxinfo2 {
+	width: 47em;
+	margin-bottom: 10em;
+
+}
+
 
 }
