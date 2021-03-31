@@ -39,7 +39,7 @@ footer {
 main{
 	margin: auto;
 	margin-top: -2rem;
-	max-width: 70%;
+	width: 70%;
 	background: #F4EBC0;
 }
 
@@ -474,6 +474,37 @@ img {
 	margin-bottom: 10em;
 
 }
+
+@media screen and (max-width: 1160px){
+	main{
+		width: 95%;
+	}
+
+	h1{
+		font-size: 0.5rem;
+	}
+
+	h4{
+		font-size: 2.1rem;
+	}
+
+	h5{
+		font-size: 0.8rem;
+	}
+
+	h6{
+		font-size: 0.65rem;
+	}
+
+	img{
+		width: 17rem;
+	}
+
+	body{
+		font-size: 10px;
+	}
+}
+
 
 
 }
