@@ -1,0 +1,198 @@
+h1 {
+	font-family: 'Jost', sans-serif;
+	font-size: 30pt;
+	font-weight: 500;
+	padding: 5px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Jost', sans-serif;
+	font-size: 20pt;
+	font-weight: 400;
+	padding: 5px;
+	text-align: left;
+}
+
+h3 {
+	font-family: 'Jost', sans-serif;
+	font-size: 8.5pt;
+	font-weight: 400;
+	margin-top: -7em;
+	padding: 57px;
+	text-align: justify;
+}
+
+
+body {
+	background-color: #7dc386;
+}
+
+main {
+	background-color: #fffdf7;
+	width: 1250px;
+	height: 650px;
+	margin: auto;
+}
+
+.sidebar {
+	background-color: #f9f8f3;
+	width: 300px;
+	height: 650px;
+	position: fixed;
+
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin-left: 60px;
+	margin-top: 80px;
+}
+
+.exercisebox {
+	font-family: 'Jost', sans-serif;
+	font-size: 15pt;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 120px;
+	width: 475px;
+	height: 650px;
+	left: 295px;
+	position: relative;
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.exercise1 {
+	background-color: yellow;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.exercise1:hover {
+	transform: skew(-30deg, 20deg);
+
+}
+
+.exercise2 {
+	background-color: red;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.exercise3 {
+	background-color: yellow;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.exercise4 {
+	background-color: red;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.exercise5 {
+	display: flex;
+	flex-direction: column;
+	background-color: yellow;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.projectbox {
+	width: 475px;
+	height: 650px;
+	position: relative;
+    bottom: 650px;
+    left: 775px;
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.project1 {
+	flex: 1;
+	background-color: yellow;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+.project2 {
+	flex: 1;
+	background-color: red;
+	width: 475px;
+	height: 130px;
+	border: 10px;
+}
+
+
+$speed: 0.5s;
+
+.btn-flip{
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  
+  &:hover{
+    
+    &:after{
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+    
+    &:before{
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+  
+  &:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: $speed;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  
+  &:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: $speed;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+}

@@ -1,0 +1,199 @@
+.mainbox {
+	margin: auto;
+	position: relative;
+	width: 850px;
+	height: 1200px;
+	background-color: #58bdde;
+	overflow: hidden;
+}
+
+.greenbox {
+	position: absolute;
+	transform: rotate(-45deg);
+	left: -1.4em;
+	top: -14.5em;
+	height: 320px;
+	mix-blend-mode: darken;
+}
+
+.gbox1 {
+	background-color: #408227;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+}
+
+.gbox1:hover {
+	background-color: yellow;
+	transition-property: background-image;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+}
+
+.bluebox {
+	position: absolute;
+	transform: rotate(-45deg);
+	left: 11.6em;
+	top: 9.5em;
+	height: 450px;
+}
+
+.bbox1 {
+	background-color: #384d86;
+	width: 410px;
+	height: 410px;
+	margin: 10px;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+}
+
+.bbox1:hover {
+	background-color: red;
+	transition-property: background-image;
+	transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+}
+
+
+
+
+.title {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 30pt;
+	position: absolute;
+	left: 202px;
+	top: 715px;
+}
+
+.names {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 30pt;
+	position: absolute;
+	left: 89px;
+    top: 693px;
+    line-height: 0.75em;
+    text-align: end;
+}
+
+.first-paragraph {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 7pt;
+	position: absolute;
+	left: 374px;
+    top: 950px;
+    line-height: 0.75em;
+    text-align: left;
+}
+
+.paragraph2 {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 7pt;
+	position: absolute;
+	left: 354px;
+    top: 940px;
+    line-height: 0.75em;
+    text-align: left;
+}
+
+.paragraph3 {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 7pt;
+	position: absolute;
+	left: 403px;
+    top: 1005px;
+    line-height: 0.75em;
+    text-align: left;
+}
+
+.paragraph4 {
+	font-family: 'Noto Sans JP',bold sans-serif;
+	transform: rotate(45deg);
+	color: black;
+	font-size: 7pt;
+	position: absolute;
+	left: 286px;
+    top: 1043px;
+    line-height: 0.75em;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 850px){
+	.mainbox {
+		width: 550px;
+		height: 900px;
+	}
+
+	.gbox1 {
+		width: 210px;
+		height: 210px;
+	}
+
+	.bbox1 {
+		width: 290px;
+		height: 290px;
+	}
+
+	.bluebox {
+	left: 10.6em;
+	top: 8.5em;
+	}
+
+	.title {
+	font-size: 25px;
+    left: 146px;
+    top: 548px;
+	}
+
+	.names {
+	font-size: 25px;
+	left: 13px;
+    top: 471px;
+	}
+
+	.first-paragraph {
+	font-size: 5pt;
+    left: 195px;
+    top: 635px;
+    line-height: 0.50em;
+	}
+
+	.paragraph2 {
+	font-size: 5pt;
+    left: 179px;
+    top: 623px;
+    line-height: 0.50em;
+	}
+
+	.paragraph3 {
+	font-size: 5pt;
+    left: 215px;
+    top: 670px;
+    line-height: 0.50em;
+	}
+
+	.paragraph4 {
+	font-size: 5pt;
+    left: 134px;
+    top: 690px;
+    line-height: 0.50em;
+	}
+
+}
