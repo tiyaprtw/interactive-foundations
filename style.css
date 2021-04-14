@@ -186,7 +186,13 @@ button {
 	flex: 1;
 	font-family: 'Jost', sans-serif;
 	font-size: 10pt;
+	transition: 200ms ease 200ms;
 
+}
+
+button:hover {
+	background-color: #d5ced5;
+	transition: background-color 200ms ease 200ms;
 }
 
 body.darkmode button {
