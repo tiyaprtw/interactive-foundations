@@ -181,6 +181,44 @@ img {
 	background-size: cover;
 }
 
+button {
+	background-color: #f0e4f0;
+	flex: 1;
+	font-family: 'Jost', sans-serif;
+	font-size: 10pt;
+
+}
+
+body.darkmode button {
+	background-color: #362736;
+	color: #f0e4f0;
+}
+
+body.darkmode .sidebar {
+	background-color: #7f607e;
+}
+
+body.darkmode h1 {
+	color: #f0e4f0;
+}
+
+body.darkmode h3 {
+	color: #f0e4f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes wiggle {
 	0% {
 		transform: rotate(5deg);
