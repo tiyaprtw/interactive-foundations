@@ -4,10 +4,11 @@ body {
 
 main {
 	background-color: #fdffd9;
-	width: 100%;
-	height: 750px;
-	overflow: hidden;
-
+    width: 1400px;
+    height: 750px;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
 }
 
 footer {
@@ -28,11 +29,12 @@ p {
 
 
 h1 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 3em;
-    color: black;
-    margin: 0;
-    padding: 20px;
+   font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+    z-index: 1;
 }
 
 h2 {
@@ -53,26 +55,25 @@ h4 {
 
 
 .roof {
-	position: static;
-    border-bottom: 100px solid red;
-    border-left: 250px solid transparent;
-    border-right: 250px solid transparent;
-    height: auto;
-    width: auto;
-    transform: rotate(180deg) scaleX(-1);
+	position: fixed;
+    left: 3.6vw;
+    top: -7.4vw;
+    background-color: red;
+    height: 211px;
+    width: 1362px;
+    z-index: 1;
+    transform: perspective(50px) rotateX(-7deg);
 }
 
 .floor {
-	position: relative;
-    top: 479px;
-    left: -7em;
-    border-bottom: 180px solid red;
-    border-left: 400px solid transparent;
-    border-right: 400px solid transparent;
-    height: 0;
-    width: 900px;
+	position: fixed;
+    left: -2.4vw;
+    top: 35.6vw;
     z-index: 1;
-
+    background-color: red;
+    height: 357px;
+    width: 1553px;
+    transform: perspective(50px) rotateX(7deg);
 }
 
 .front-view {
@@ -80,86 +81,99 @@ h4 {
 	height: fit-content;
 }
 
-.exitdoor {
-	background-color: green;
-    position: relative;
+.exitdoor1 {
+    background-color: green;
+    position: fixed;
     width: 200px;
     height: 244px;
-    left: 40em;
-    bottom: -56px;
-
+    top: 23.4vw;
+    left: 40vw;
 }
 
+/*.exitdoor1:hover {
+    transform: perspective(400px) rotateY(39deg);
+    left: 29.1vw;
+    top: 22.2vw;
+    height: 280px;
+}
+
+.exitdoor2 {
+    background-color: #4caf50;
+    position: fixed;
+    width: 200px;
+    height: 244px;
+    top: 23.4vw;
+    left: 40vw;
+}*/
 
 .clock {
-	position: relative;
+	position: fixed;
     width: 100px;
     height: 100px;
     background: red;
     border-radius: 50%;
-    top: -24em;
-    left: 689px;
+    top: 8vw;
+    left: 42.9vw;
 }
 
 .aboutbox {
-	position: relative;
+	position: fixed;
     text-align: center;
     width: 120px;
     height: 80px;
     background-color: red;
-    top: -19em;
-    left: 320px;
+    top: 24vw;
+    left: 17vw;
     border-radius: 5px;
     transform: rotate(-2deg);
 }
 
 .firstaidbox {
-	position: relative;
+	position: fixed;
     width: 120px;
     height: 100px;
     background-color: red;
-    top: -24em;
-    left: 472px;
+    top: 24vw;
+    left: 28vw;
     border-radius: 5px;
-
 }
 
 .firstaidcross {
 	background: green;
-    top: -469px;
-    left: 514px;
-    height: 72px;
-    position: relative;
+    top: 24.5vw;
+    left: 30.8vw;
+    height: 85px;
+    position: fixed;
     width: 37px;
 }
 .firstaidcross:after {
     background: green;
     content: "";
     height: 33px;
-    left: -27px;
-    position: absolute;
-    top: 19px;
-    width: 90px;
+    left: 28.5vw;
+    position: fixed;
+    top: 26vw;
+    width: 108px;
 }
 
 .circle1 {
-	position: relative;
+	position: fixed;
     background-color: red;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    top: -34em;
-    left: 60em;
+    top: 24vw;
+    left: 64vw;
 }
 
 .circle2 {
-	position: relative;
+	position: fixed;
     background-color: #8bc34a;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    top: -32em;
-    left: 59em;
+    top: 28.5vw;
+    left: 62.6vw;
     z-index: 1;
 }
 
@@ -171,37 +185,37 @@ h4 {
     border-top-right-radius: 110px;
     border: 10px solid red;
     border-bottom: 0;
-    top: -564px;
-    left: 58em;
-    position: relative;
+    top: 27.2vw;
+    left: 62vw;
+    position: fixed;
     transform: rotate(107deg);
     z-index: 1;
 }
 
 .phonebox {
-	position: relative;
+	position: fixed;
     width: 90px;
     height: 116px;
     background-color: red;
-    top: -613px;
-    left: 869px;
+    top: 24vw;
+    left: 57vw;
     border-radius: 5px;
 }
 
 .outerscreen {
-	position: relative;
+	position: fixed;
     width: 145px;
     height: 116px;
     background-color: red;
-    top: -724px;
-    left: 1021px;
-    border-radius: 5px
+    top: 23vw;
+    left: 70.5vw;
+    border-radius: 5px;
 }
 
 .screen {
-	position: relative;
-    top: -852px;
-    left: 1035px;
+	position: fixed;
+    top: 22.1vw;
+    left: 71.3vw;
     width: 120px;
     height: 100px;
     margin: 20px 0;
@@ -223,22 +237,22 @@ h4 {
 }
 
 .drawer {
-	position: relative;
+	position: fixed;
     width: 200px;
     height: 116px;
     background-color: red;
-    top: -857px;
-    left: 982px;
+    top: 31.5vw;
+    left: 69vw;
     border-radius: 5px;
 }
 
 .exit {
-	position: relative;
+	position: fixed;
     width: 170px;
     height: 39px;
     background-color: #4caf50;
-    top: -1172px;
-    left: 655px;
+    top: 20vw;
+    left: 41vw;
     border-radius: 5px;
     text-align: center;
 }
@@ -257,22 +271,22 @@ h4 {
 
 
 .leftpanel {
-	position: relative;
-    width: 374px;
-    height: 750px;
+	position: fixed;
+    width: 446px;
+    height: 800px;
     background-color: #ffedb3;
-    top: -1632px;
-    left: -11px;
+    top: -4vw;
+    left: -10vw;
     transform: perspective(400px) rotateY(39deg);
 }
 
 .rightpanel {
-	position: relative;
-    width: 400px;
-    height: 730px;
+	position: fixed;
+    width: 446px;
+    height: 800px;
     background-color: #ffedb3;
-    top: -2383px;
-    left: 1106px;
+    top: -4vw;
+    left: 77vw;
     transform: perspective(400px) rotateY(-39deg);
 }
 
@@ -287,36 +301,438 @@ a {
 }
 
 .abouttext {
-    position: absolute;
-    top: 354px;
-    left: 358px;
+    position: fixed;
+    top: 25.7vw;
+    left: 19vw;
     transform: rotate(-2deg);
 }
 
 .preparetext {
-    position: absolute;
-    top: 366px;
-    left: 499px;
+    position: fixed;
+    top: 26.3vw;
+    left: 29.3vw;
 }
 
 .contacttext {
-    position: absolute;
-    top: 369px;
-    left: 879px;
+    position: fixed;
+    top: 25.5vw;
+    left: 57.1vw;
 }
 
 .additionaltext {
-    position: absolute;
-    top: 369px;
-    left: 1040px;
+    position: fixed;
+    top: 24vw;
+    left: 71vw
+}
+
+.exittext {
+    position: fixed;
+    top: 18.5vw;
+    left: 44vw;
 }
 
 
 
+@media screen and (max-width: 1295px){
+   .roof {
+    width: 1165px;
+   }
+
+   .floor {
+    width: 1325px;
+   }
+
+   .leftpanel {
+    width: 374px;
+   }
+
+   .exitdoor1 {
+    height: 214px;
+   }
+
+   .firstaidcross{
+    left: 31.3vw;
+   }
+
+   .exittext {
+    top: 18.2vw;
+    left: 44.5vw;
+   }
+
+}
 
 
+@media screen and (max-width: 1152px){
+   .roof {
+    width: 1048px;
+   }
+
+   .floor {
+    width: 1192px;
+   }
+
+   .clock {
+    width: 70px;
+    height: 70px;
+    top: 12vw;
+    left: 45vw;
+   }
+
+   .leftpanel {
+    width: 314px;
+   }
+
+   .rightpanel {
+    width: 605px;
+   }
+
+   .exit {
+    width: 132px;
+    left: 42vw;
+   }
+
+   .phonebox {
+    height: 96px;
+   }
+
+   .outerscreen {
+    height: 86px;
+   }
+
+   .screen {
+    height: 67px;
+   }
+
+   .aboutbox {
+    width: 95px;
+    height: 61px;
+    left: 18vw;
+   }
+
+   .drawer {
+    height: 172px;
+   }
+
+   .exitdoor1 {
+    width: 152px;
+    top: 27vw;
+    left: 41.5vw;
+   }
+
+   .firstaidcross{
+    left: 32vw;
+   }
+
+   .exittext {
+    top: 18.2vw;
+    left: 44.5vw;
+   }
+
+}
 
 
+@media screen and (max-width: 800px){
+   .roof {
+    left: 3.6vw;
+    top: -7.4vw;
+    height: 211px;
+    width: 51em;
+   }
+
+   .floor {
+    left: -2.4vw;
+    top: 61.6vw;
+    height: 357px;
+    width: 57em;
+   }
+
+   .clock {
+    width: 70px;
+    height: 70px;
+    top: 24vw;
+    left: 46vw;
+   }
+
+   .leftpanel {
+    left: -16vw;
+   }
+
+   .rightpanel {
+    left: 78vw;
+   }
+
+   .exit {
+    width: 132px;
+    left: 42.5vw;
+    top: 39vw;
+   }
+
+   .phonebox {
+    height: 76px;
+    top: 46vw;
+    left: 62vw;
+    width: 66px;
+   }
+
+   .outerscreen {
+    height: 86px;
+    top: 43vw;
+    left: 76.3vw;
+    width: 119px;
+   }
+
+   .screen {
+    height: 67px;
+    top: 41.6vw;
+    left: 77.6vw;
+    width: 98px;
+   }
+
+   .aboutbox {
+    width: 79px;
+    height: 66px;
+    left: 18vw;
+    top: 48vw;
+}
+
+   .drawer {
+    height: 108px;
+    top: 54.5vw;
+    left: 74vw;
+    width: 151px;
+   }
+
+   .exitdoor1 {
+    width: 152px;
+    top: 46vw;
+    left: 41.5vw;
+    height: 179px;
+   }
+
+   .firstaidcross{
+    left: 32.5vw;
+    top: 47vw;
+   }
+
+   .exittext {
+    top: 36.2vw;
+    left: 45.5vw;
+   }
+
+   .firstaidbox {
+    top: 47vw;
+    width: 96px;
+    height: 87px;
+    left: 28.5vw;
+   }
+
+   .abouttext {
+    top: 50.7vw;
+   }
+
+   .additionaltext {
+    top: 43vw;
+    left: 76vw;
+   }
+
+   .halfcircle {
+    width: 36px;
+    height: 1px;
+    top: 49.2vw;
+    left: 68vw;
+   }
+
+   .circle1 {
+    width: 20px;
+    height: 20px;
+    top: 46vw;
+    left: 70.5vw;
+   }
+
+   .circle2 {
+    width: 20px;
+    height: 20px;
+    top: 50.5vw;
+    left: 68.6vw;
+   }
+
+   .contacttext {
+    top: 46.5vw;
+    left: 60.1vw;
+   }
+
+   .firstaidbox {
+    width: 96px;
+    height: 87px;
+    top: 47vw;
+    left: 28.5vw;
+   }
+
+   .firstaidcross:after {
+    height: 33px;
+    left: 29.2vw;
+    top: 50vw;
+    width: 89px;
+   }
+
+   .preparetext {
+    top: 50.3vw;
+    left: 29.5vw;
+   }
+
+}
+
+
+@media screen and (max-width: 500px){
+   .roof {
+    left: 3.6vw;
+    top: -7.4vw;
+    height: 211px;
+    width: 51em;
+   }
+
+   .floor {
+    left: -2.4vw;
+    top: 61.6vw;
+    height: 357px;
+    width: 57em;
+   }
+
+   .clock {
+    width: 70px;
+    height: 70px;
+    top: 24vw;
+    left: 46vw;
+   }
+
+   .leftpanel {
+    left: -16vw;
+   }
+
+   .rightpanel {
+    left: 78vw;
+   }
+
+   .exit {
+    width: 132px;
+    left: 42.5vw;
+    top: 39vw;
+   }
+
+   .phonebox {
+    height: 76px;
+    top: 46vw;
+    left: 62vw;
+    width: 66px;
+   }
+
+   .outerscreen {
+    height: 86px;
+    top: 43vw;
+    left: 76.3vw;
+    width: 119px;
+   }
+
+   .screen {
+    height: 67px;
+    top: 41.6vw;
+    left: 77.6vw;
+    width: 98px;
+   }
+
+   .aboutbox {
+    width: 79px;
+    height: 66px;
+    left: 18vw;
+    top: 48vw;
+}
+
+   .drawer {
+    height: 108px;
+    top: 54.5vw;
+    left: 74vw;
+    width: 151px;
+   }
+
+   .exitdoor1 {
+    width: 152px;
+    top: 46vw;
+    left: 41.5vw;
+    height: 179px;
+   }
+
+   .firstaidcross{
+    left: 32.5vw;
+    top: 47vw;
+   }
+
+   .exittext {
+    top: 36.2vw;
+    left: 45.5vw;
+   }
+
+   .firstaidbox {
+    top: 47vw;
+    width: 96px;
+    height: 87px;
+    left: 28.5vw;
+   }
+
+   .abouttext {
+    top: 50.7vw;
+   }
+
+   .additionaltext {
+    top: 43vw;
+    left: 76vw;
+   }
+
+   .halfcircle {
+    width: 36px;
+    height: 1px;
+    top: 49.2vw;
+    left: 68vw;
+   }
+
+   .circle1 {
+    width: 20px;
+    height: 20px;
+    top: 46vw;
+    left: 70.5vw;
+   }
+
+   .circle2 {
+    width: 20px;
+    height: 20px;
+    top: 50.5vw;
+    left: 68.6vw;
+   }
+
+   .contacttext {
+    top: 46.5vw;
+    left: 60.1vw;
+   }
+
+   .firstaidbox {
+    width: 96px;
+    height: 87px;
+    top: 47vw;
+    left: 28.5vw;
+   }
+
+   .firstaidcross:after {
+    height: 33px;
+    left: 29.2vw;
+    top: 50vw;
+    width: 89px;
+   }
+
+   .preparetext {
+    top: 50.3vw;
+    left: 29.5vw;
+   }
+
+}
 
 
 

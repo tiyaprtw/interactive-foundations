@@ -1,25 +1,23 @@
+:root {
+    --green: #39914c;
+    --cream: #fdffd9;
+}
+
+
 body {
-    background-color: white;
+    background-color: #fdffd9;
 }
 
 main {
     background-color: #fdffd9;
     width: 100%;
-    height: 750px;
     overflow: hidden;
-
-}
-
-footer {
-    background-color: black;
-    width: auto;
-    height: 200px;
-
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-style: bold;
     color: black;
     margin: 0;
     padding: 20px;
@@ -37,7 +35,7 @@ h1 {
 
 h2 {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 1em;
+    font-size: 1.8em;
     color: black;
     margin: 0;
     padding: 20px;
@@ -72,18 +70,32 @@ h4 {
     border-radius: 20px;
 }
 
-.holder {
-    width: 100%;
+.holder1 {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
     height: 650px;
-    top: 100px;
+    top: 121px;
     position: relative;
-    background-color: white;
 }
+
+.holder2 {
+    display: flex;
+    width: 919px;
+    height: 650px;
+    top: -529px;
+    left: 37em;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 .box1 {
     width: 280px;
     height: 200px;
-    background-color: red;
+    background-color: var(--green);
     position: relative;
     top: 226px;
 }
@@ -91,7 +103,7 @@ h4 {
 .box2 {
     width: 280px;
     height: 200px;
-    background-color: red;
+    background-color: var(--green);
     position: relative;
     top: 26px;
     left: 304px;
@@ -100,20 +112,13 @@ h4 {
 .box3 {
     width: 280px;
     height: 200px;
-    background-color: red;
-    position: relative;
-    top: -378px;
-    left: 609px;
-    overflow: scroll;
+    background-color: var(--green);
 }
 
 .box4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -374px;
-    left: 609px;
     overflow: scroll;
 }
 
@@ -121,9 +126,6 @@ h4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -370px;
-    left: 609px;
     overflow: scroll;
 }
 
@@ -131,9 +133,6 @@ h4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -978px;
-    left: 913px;
     overflow: scroll;
 }
 
@@ -141,9 +140,6 @@ h4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -974px;
-    left: 913px;
     overflow: scroll;
 }
 
@@ -151,29 +147,19 @@ h4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -970px;
-    left: 913px;
     overflow: scroll;
 }
 
 .box9 {
     width: 280px;
     height: 200px;
-    background-color: red;
-    position: relative;
-    top: -1170px;
-    left: 1217px;
-    overflow: scroll;
+    background-color: var(--green);
 }
 
 .box10 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -1575px;
-    left: 1217px;
     overflow: scroll;
 }
 
@@ -181,8 +167,5 @@ h4 {
     width: 280px;
     height: 200px;
     background-color: red;
-    position: relative;
-    top: -1979px;
-    left: 1217px;
     overflow: scroll;
 }
