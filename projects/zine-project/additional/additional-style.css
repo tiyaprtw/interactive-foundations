@@ -78,6 +78,12 @@ h4 {
     align-self: center;
     text-align: center;
     border-radius: 20px;
+    transition: 500ms ease 300ms;
+}
+
+.buttons:hover {
+    background-color: var(--green);
+    transition: 500ms ease 300ms;
 }
 
 .images {
