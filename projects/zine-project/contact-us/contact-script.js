@@ -5,7 +5,7 @@ console.log('dark mode');
 $(document).ready(function(){
 
 	
-	$("#darkmode").click(function(){
+	$("#icons").click(function(){
 		$('body').toggleClass('darkmode');
 	});
 

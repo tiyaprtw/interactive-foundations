@@ -1,14 +1,26 @@
+:root {
+  --red: #ea0000;
+  --darkred: #b92323;
+  --darkcream: #ffedb3;
+  --cream: #fdffd9;
+  --green: #39914c;
+  --blackmain: #414131;
+}
+
 body {
-	background-color: white;
+	background-color: var(--cream);
 }
 
 main {
-	background-color: #fdffd9;
-    width: 1400px;
+	background-color: var(--cream);
+    width: 1600px;
     height: 750px;
+    left: -1vw;
     overflow: hidden;
+    margin: auto;
     position: fixed;
     z-index: -1;
+    animation: shakingtwo 3s infinite;
 }
 
 footer {
@@ -30,10 +42,10 @@ p {
 
 h1 {
    font-family: 'Archivo Black', sans-serif;
-    font-size: 2em;
+    font-size: 3.8em;
     color: white;
     text-align: center;
-    text-decoration: solid;
+    text-decoration: none;
     z-index: 1;
 }
 
@@ -46,11 +58,22 @@ h2 {
     z-index: 1;
 }
 
-h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
-    color: black;
+h3 {
+   font-family: 'Archivo Black', sans-serif;
+    font-size: 3em;
+    color: white;
     text-align: center;
+    text-decoration: none;
+    z-index: 1;
+}
+
+h4 {
+   font-family: 'Archivo Black', sans-serif;
+    font-size: 2.3em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
 }
 
 
@@ -58,7 +81,7 @@ h4 {
 	position: fixed;
     left: 3.6vw;
     top: -7.4vw;
-    background-color: red;
+    background-color: var(--red);
     height: 211px;
     width: 1362px;
     z-index: 1;
@@ -70,7 +93,7 @@ h4 {
     left: -2.4vw;
     top: 35.6vw;
     z-index: 1;
-    background-color: red;
+    background-color: var(--red);
     height: 357px;
     width: 1553px;
     transform: perspective(50px) rotateX(7deg);
@@ -81,73 +104,66 @@ h4 {
 	height: fit-content;
 }
 
-.exitdoor1 {
-    background-color: green;
+#exitdoor1 {
+    background-color: var(--green);
     position: fixed;
     width: 200px;
     height: 244px;
     top: 23.4vw;
     left: 40vw;
+    animation: colorblink 5s infinite;
 }
 
-/*.exitdoor1:hover {
-    transform: perspective(400px) rotateY(39deg);
-    left: 29.1vw;
-    top: 22.2vw;
-    height: 280px;
-}
-
-.exitdoor2 {
-    background-color: #4caf50;
-    position: fixed;
-    width: 200px;
-    height: 244px;
-    top: 23.4vw;
-    left: 40vw;
-}*/
-
-.clock {
+#clock {
 	position: fixed;
     width: 100px;
     height: 100px;
-    background: red;
+    background-image: url(./images/day-01.png);
+    background-size: cover;
     border-radius: 50%;
     top: 8vw;
     left: 42.9vw;
+    z-index: 1;
 }
 
-.aboutbox {
-	position: fixed;
+#clock:hover {
+    animation: shaking 500ms infinite;
+}
+
+#aboutbox {
+	   position: fixed;
     text-align: center;
     width: 120px;
     height: 80px;
-    background-color: red;
+    background-color: var(--red);
     top: 24vw;
     left: 17vw;
     border-radius: 5px;
     transform: rotate(-2deg);
+    animation: shaking 3s infinite;
 }
 
-.firstaidbox {
+#firstaidbox {
 	position: fixed;
     width: 120px;
     height: 100px;
-    background-color: red;
+    background-color: var(--red);
     top: 24vw;
     left: 28vw;
     border-radius: 5px;
+    animation: shaking 3s infinite;
 }
 
-.firstaidcross {
-	background: green;
+#firstaidcross {
+	 background-color: var(--blackmain);
     top: 24.5vw;
     left: 30.8vw;
     height: 85px;
     position: fixed;
     width: 37px;
 }
-.firstaidcross:after {
-    background: green;
+#firstaidcross:after {
+    background-color: var(--blackmain);
     content: "";
     height: 33px;
     left: 28.5vw;
@@ -158,7 +174,7 @@ h4 {
 
 .circle1 {
 	position: fixed;
-    background-color: red;
+    background-color: var(--red);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -168,7 +184,7 @@ h4 {
 
 .circle2 {
 	position: fixed;
-    background-color: #8bc34a;
+    background-color: var(--red);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -180,10 +196,10 @@ h4 {
 .halfcircle {
 	width: 70px;
     height: 3px;
-    background-color: #4caf50;
+    background-color: var(--red);
     border-top-left-radius: 110px;
     border-top-right-radius: 110px;
-    border: 10px solid red;
+    border: 10px solid var(--red);
     border-bottom: 0;
     top: 27.2vw;
     left: 62vw;
@@ -192,40 +208,41 @@ h4 {
     z-index: 1;
 }
 
-.phonebox {
+#phonebox {
 	position: fixed;
     width: 90px;
     height: 116px;
-    background-color: red;
+    background-color: var(--red);
     top: 24vw;
     left: 57vw;
     border-radius: 5px;
+    animation: shaking 3s infinite;
 }
 
-.outerscreen {
+#outerscreen {
 	position: fixed;
     width: 145px;
     height: 116px;
-    background-color: red;
+    background-color: var(--red);
     top: 23vw;
     left: 70.5vw;
     border-radius: 5px;
 }
 
-.screen {
+#screen {
 	position: fixed;
     top: 22.1vw;
     left: 71.3vw;
     width: 120px;
     height: 100px;
     margin: 20px 0;
-    background: green;
+    background: var(--green);
     border-radius: 50% / 10%;
     color: white;
     text-align: center;
     text-indent: .1em;
 }
-.screen:before {
+#screen:before {
       content: '';
       position: absolute;
       top: 10%;
@@ -240,41 +257,29 @@ h4 {
 	position: fixed;
     width: 200px;
     height: 116px;
-    background-color: red;
+    background-color: var(--red);
     top: 31.5vw;
     left: 69vw;
     border-radius: 5px;
+    animation: sliding 3s infinite;
 }
 
 .exit {
 	position: fixed;
     width: 170px;
     height: 39px;
-    background-color: #4caf50;
+    background-color: var(--green);
     top: 20vw;
     left: 41vw;
     border-radius: 5px;
     text-align: center;
 }
 
-.safezoneleft {
-	position: relative;
-    width: 170px;
-    height: 170px;
-    background-color: #4caf50;
-    top: -897px;
-    left: 289px;
-    border-bottom-right-radius: 170px;
-    z-index: 1;
-
-}
-
-
 .leftpanel {
 	position: fixed;
     width: 446px;
     height: 800px;
-    background-color: #ffedb3;
+    background-color: var(--darkcream);
     top: -4vw;
     left: -10vw;
     transform: perspective(400px) rotateY(39deg);
@@ -284,56 +289,132 @@ h4 {
 	position: fixed;
     width: 446px;
     height: 800px;
-    background-color: #ffedb3;
+    background-color: var(--darkcream);
     top: -4vw;
     left: 77vw;
     transform: perspective(400px) rotateY(-39deg);
 }
 
-a {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    text-decoration: solid;
-    z-index: 1;
-
-}
 
 .abouttext {
     position: fixed;
-    top: 25.7vw;
+    top: 25vw;
     left: 19vw;
     transform: rotate(-2deg);
+    z-index: 1;
 }
 
 .preparetext {
     position: fixed;
-    top: 26.3vw;
-    left: 29.3vw;
+    top: 25.5vw;
+    left: 29.4vw;
+    z-index: 1;
 }
 
 .contacttext {
     position: fixed;
     top: 25.5vw;
     left: 57.1vw;
+    z-index: 1;
 }
 
 .additionaltext {
     position: fixed;
     top: 24vw;
-    left: 71vw
+    left: 71vw;
+    z-index: 1;
 }
 
 .exittext {
     position: fixed;
-    top: 18.5vw;
-    left: 44vw;
+    top: 16.5vw;
+    left: 43.5vw;
+}
+
+.holdersmall {
+      display: none;
+    }
+
+
+
+
+
+body.darkmode #clock {
+    background-image: url(./images/dark-02.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    animation: shaking 500ms infinite;
+}
+
+body.darkmode .roof {
+  background-color: #b92323;
+}
+
+body.darkmode .floor {
+  background-color: #b92323;
+}
+
+body.darkmode #clock {
+  background-color: #b92323;
+}
+
+body.darkmode #aboutbox {
+  background-color: #b92323;
+  animation: none;
+}
+
+body.darkmode #phonebox {
+  background-color: #b92323;
+  animation: none;
+}
+
+body.darkmode #firstaidbox {
+  background-color: #b92323;
+  animation: none;
+}
+
+body.darkmode .circle1 {
+  background-color: #b92323;
+}
+
+body.darkmode .circle2 {
+  background-color: #b92323;
+}
+
+body.darkmode .halfcircle {
+  background-color: #b92323;
+  border: 10px solid #b92323;
+  border-bottom: 0;
+}
+
+body.darkmode #outerscreen {
+  background-color: #b92323;
+}
+body.darkmode .drawer {
+  background-color: #b92323;
+  animation: none;
+}
+
+body.darkmode main {
+ background-color: #414131;
+ animation: none;
+}
+
+body.darkmode .leftpanel .rightpanel {
+  background-color: #c4b78d;
 }
 
 
 
+
+
+
+
 @media screen and (max-width: 1295px){
+  .holdersmall {
+      display: none;
+    }
    .roof {
     width: 1165px;
    }
@@ -346,23 +427,27 @@ a {
     width: 374px;
    }
 
-   .exitdoor1 {
+   #exitdoor1 {
     height: 214px;
    }
 
-   .firstaidcross{
+   #firstaidcross{
     left: 31.3vw;
    }
 
    .exittext {
-    top: 18.2vw;
-    left: 44.5vw;
+    top: 15.7vw;
+    left: 44vw;
    }
 
 }
 
 
 @media screen and (max-width: 1152px){
+    .holdersmall {
+      display: none;
+    }
+
    .roof {
     width: 1048px;
    }
@@ -371,7 +456,7 @@ a {
     width: 1192px;
    }
 
-   .clock {
+   #clock {
     width: 70px;
     height: 70px;
     top: 12vw;
@@ -391,19 +476,19 @@ a {
     left: 42vw;
    }
 
-   .phonebox {
+   #phonebox {
     height: 96px;
    }
 
-   .outerscreen {
+   #outerscreen {
     height: 86px;
    }
 
-   .screen {
+   #screen {
     height: 67px;
    }
 
-   .aboutbox {
+   #aboutbox {
     width: 95px;
     height: 61px;
     left: 18vw;
@@ -413,25 +498,30 @@ a {
     height: 172px;
    }
 
-   .exitdoor1 {
+   #exitdoor1 {
     width: 152px;
     top: 27vw;
     left: 41.5vw;
    }
 
-   .firstaidcross{
+   #firstaidcross{
     left: 32vw;
    }
 
    .exittext {
-    top: 18.2vw;
-    left: 44.5vw;
+    top: 14.2vw;
+    left: 44vw;
    }
 
 }
 
 
 @media screen and (max-width: 800px){
+
+    h2 {
+      font-size: 0.8em;
+    }
+
    .roof {
     left: 3.6vw;
     top: -7.4vw;
@@ -446,7 +536,7 @@ a {
     width: 57em;
    }
 
-   .clock {
+   #clock {
     width: 70px;
     height: 70px;
     top: 24vw;
@@ -467,28 +557,28 @@ a {
     top: 39vw;
    }
 
-   .phonebox {
+   #phonebox {
     height: 76px;
     top: 46vw;
     left: 62vw;
     width: 66px;
    }
 
-   .outerscreen {
+   #outerscreen {
     height: 86px;
     top: 43vw;
     left: 76.3vw;
     width: 119px;
    }
 
-   .screen {
+   #screen {
     height: 67px;
     top: 41.6vw;
     left: 77.6vw;
     width: 98px;
    }
 
-   .aboutbox {
+   #aboutbox {
     width: 79px;
     height: 66px;
     left: 18vw;
@@ -500,26 +590,27 @@ a {
     top: 54.5vw;
     left: 74vw;
     width: 151px;
+    animation: none;
    }
 
-   .exitdoor1 {
+   #exitdoor1 {
     width: 152px;
     top: 46vw;
     left: 41.5vw;
     height: 179px;
    }
 
-   .firstaidcross{
+   #firstaidcross{
     left: 32.5vw;
     top: 47vw;
    }
 
    .exittext {
-    top: 36.2vw;
-    left: 45.5vw;
+    top: 31.7vw;
+    left: 45vw;
    }
 
-   .firstaidbox {
+   #firstaidbox {
     top: 47vw;
     width: 96px;
     height: 87px;
@@ -527,12 +618,13 @@ a {
    }
 
    .abouttext {
-    top: 50.7vw;
+    top: 49.7vw;
+    left: 20vw;
    }
 
    .additionaltext {
-    top: 43vw;
-    left: 76vw;
+    top: 44.5vw;
+    left: 77.3vw;
    }
 
    .halfcircle {
@@ -557,8 +649,8 @@ a {
    }
 
    .contacttext {
-    top: 46.5vw;
-    left: 60.1vw;
+    top: 47.5vw;
+    left: 62.1vw;
    }
 
    .firstaidbox {
@@ -568,7 +660,7 @@ a {
     left: 28.5vw;
    }
 
-   .firstaidcross:after {
+   #firstaidcross:after {
     height: 33px;
     left: 29.2vw;
     top: 50vw;
@@ -576,161 +668,357 @@ a {
    }
 
    .preparetext {
-    top: 50.3vw;
-    left: 29.5vw;
+    top: 49.3vw;
+    left: 30.5vw;
    }
 
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
+  main {
+    animation: none;
+    overflow: scroll;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 3em;
+    text-align: left;
+  }
    .roof {
-    left: 3.6vw;
-    top: -7.4vw;
-    height: 211px;
-    width: 51em;
+    display: none;
    }
 
    .floor {
-    left: -2.4vw;
-    top: 61.6vw;
-    height: 357px;
-    width: 57em;
+    display: none;
    }
 
-   .clock {
-    width: 70px;
-    height: 70px;
-    top: 24vw;
-    left: 46vw;
+   #clock {
+    display: none;
    }
 
    .leftpanel {
-    left: -16vw;
+    display: none;
    }
 
    .rightpanel {
-    left: 78vw;
+    display: none;
    }
 
    .exit {
-    width: 132px;
-    left: 42.5vw;
-    top: 39vw;
+    display: none;
    }
 
-   .phonebox {
-    height: 76px;
-    top: 46vw;
-    left: 62vw;
-    width: 66px;
+   #phonebox {
+    display: none;
    }
 
-   .outerscreen {
-    height: 86px;
-    top: 43vw;
-    left: 76.3vw;
-    width: 119px;
+   #outerscreen {
+    display: none;
    }
 
-   .screen {
-    height: 67px;
-    top: 41.6vw;
-    left: 77.6vw;
-    width: 98px;
+   #screen {
+    display: none;
    }
 
-   .aboutbox {
-    width: 79px;
-    height: 66px;
-    left: 18vw;
-    top: 48vw;
+   #aboutbox {
+    display: none;
 }
 
    .drawer {
-    height: 108px;
-    top: 54.5vw;
-    left: 74vw;
-    width: 151px;
+    display: none;
    }
 
-   .exitdoor1 {
-    width: 152px;
-    top: 46vw;
-    left: 41.5vw;
-    height: 179px;
+   #exitdoor1 {
+   display: none;
    }
 
-   .firstaidcross{
-    left: 32.5vw;
-    top: 47vw;
+   #firstaidcross{
+    display: none;
    }
 
    .exittext {
-    top: 36.2vw;
-    left: 45.5vw;
+    display: none;
    }
 
-   .firstaidbox {
-    top: 47vw;
-    width: 96px;
-    height: 87px;
-    left: 28.5vw;
+   #firstaidbox {
+   display: none;
    }
 
    .abouttext {
-    top: 50.7vw;
+    display: none;
    }
 
    .additionaltext {
-    top: 43vw;
-    left: 76vw;
+    display: none;
    }
 
    .halfcircle {
-    width: 36px;
-    height: 1px;
-    top: 49.2vw;
-    left: 68vw;
+    display: none;
    }
 
    .circle1 {
-    width: 20px;
-    height: 20px;
-    top: 46vw;
-    left: 70.5vw;
+    display: none;
    }
 
    .circle2 {
-    width: 20px;
-    height: 20px;
-    top: 50.5vw;
-    left: 68.6vw;
+    display: none;
    }
 
    .contacttext {
-    top: 46.5vw;
-    left: 60.1vw;
+    display: none;
    }
 
-   .firstaidbox {
-    width: 96px;
-    height: 87px;
-    top: 47vw;
-    left: 28.5vw;
+   #firstaidbox {
+   display: none;
    }
 
-   .firstaidcross:after {
-    height: 33px;
-    left: 29.2vw;
-    top: 50vw;
-    width: 89px;
+   #firstaidcross:after {
+    display: none;
    }
 
    .preparetext {
-    top: 50.3vw;
-    left: 29.5vw;
+    display: none;
    }
+
+   .holdersmall {
+  display: flex;
+  top: 1vw;
+  position: absolute;
+  flex-direction: column;
+  width: 250px;
+  height: 750px;
+  z-index: 1;
+}
+
+#earthquakes {
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+
+#earthquakes:hover {
+  background-color: var(--red);
+}
+
+#aboutbox2 {
+  background-color: var(--red);
+  width: 450px;
+  height: 200px;
+}
+
+#aboutbox2:hover {
+  background-color: var(--green);
+}
+
+#preparebox2 {
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+#preparebox2:hover {
+  background-color: var(--red);
+}
+
+#contactbox2 {
+  background-color: var(--red);
+  width: 450px;
+  height: 200px;
+}
+
+#contactbox2:hover {
+  background-color: var(--green);
+}
+
+#additionalbox2 {
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+
+#additionalbox2:hover {
+  background-color: var(--red);
+}
+
+}
+
+
+
+@media screen and (max-width: 300px){
+  h1 {
+    font-size: 1.8em;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  main {
+    animation: none;
+    overflow: scroll;
+  }
+   .roof {
+    display: none;
+   }
+
+   .floor {
+    display: none;
+   }
+
+   #clock {
+    display: none;
+   }
+
+   .leftpanel {
+    display: none;
+   }
+
+   .rightpanel {
+    display: none;
+   }
+
+   .exit {
+    display: none;
+   }
+
+   #phonebox {
+    display: none;
+   }
+
+   #outerscreen {
+    display: none;
+   }
+
+   #screen {
+    display: none;
+   }
+
+   #aboutbox {
+    display: none;
+}
+
+   .drawer {
+    display: none;
+   }
+
+   #exitdoor1 {
+   display: none;
+   }
+
+   #firstaidcross{
+    display: none;
+   }
+
+   .exittext {
+    display: none;
+   }
+
+   #firstaidbox {
+   display: none;
+   }
+
+   .abouttext {
+    display: none;
+   }
+
+   .additionaltext {
+    display: none;
+   }
+
+   .halfcircle {
+    display: none;
+   }
+
+   .circle1 {
+    display: none;
+   }
+
+   .circle2 {
+    display: none;
+   }
+
+   .contacttext {
+    display: none;
+   }
+
+   #firstaidbox {
+   display: none;
+   }
+
+   #firstaidcross:after {
+    display: none;
+   }
+
+   .preparetext {
+    display: none;
+   }
+
+   .holdersmall {
+  display: flex;
+  top: 1vw;
+  position: absolute;
+  flex-direction: column;
+  width: 250px;
+  height: 750px;
+  z-index: 1;
+}
+
+#earthquakes {
+  flex: 1;
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+
+#earthquakes:hover {
+  background-color: var(--red);
+}
+
+#aboutbox2 {
+  background-color: var(--red);
+  width: 450px;
+  height: 200px;
+}
+
+#aboutbox2:hover {
+  background-color: var(--green);
+}
+
+#preparebox2 {
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+#preparebox2:hover {
+  background-color: var(--red);
+}
+
+#contactbox2 {
+  background-color: var(--red);
+  width: 450px;
+  height: 200px;
+}
+
+#contactbox2:hover {
+  background-color: var(--green);
+}
+
+#additionalbox2 {
+  background-color: var(--green);
+  width: 450px;
+  height: 200px;
+}
+
+#additionalbox2:hover {
+  background-color: var(--red);
+}
 
 }
 
@@ -741,21 +1029,63 @@ a {
 
 
 
+@keyframes shaking {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
 
+@keyframes shakingtwo {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
 
+@keyframes sliding {
+  0% {
+    top: 31.5vw; left: 69vw;
+  }
+  25%{
+    top: 31.5vw; left: 71vw;
+  }
+  50%{
+    top: 31.5vw; left: 73vw;
+  }
+  75%{
+    top: 31.5vw; left: 71vw;
+  }
+  100%{
+    top: 31.5vw; left: 69vw;
+  }
+}
 
-
-
-/*@keyframes radar {
-	0% {
-		transform: rotate(5deg);
-	}
-	50% {
-		transform: rotate(-5deg);
-	}
-	100% {
-		transform: rotate(5deg);
-	}
-}*\
-
+@keyframes colorblink {
+  0% {
+    background-color: #39914c;
+ }
+  25% {
+    background-color: #3ca452;
+ }
+ 50% {
+    background-color: #2fc54f;
+ }
+ 75% {
+    background-color: #1ed846;
+ }
+100% {
+    background-color: #2fc54f;
+ }
+}
 

@@ -56,7 +56,6 @@ h4 {
     font-size: 0.8em;
     color: black;
     text-align: center;
-    text-decoration: capitalize;
 }
 
 
@@ -79,19 +78,13 @@ h4 {
     align-self: center;
     text-align: center;
     border-radius: 20px;
-    transition: 500ms ease 300ms;
-}
-
-.buttons:hover {
-    background-color: var(--green);
-    transition: 500ms ease 300ms;
 }
 
 .images {
     position: relative;
     top: 144px;
     left: 2em;
-    background-image: url(https://static.dw.com/image/52148088_101.jpg);
+    background-image: url(https://images.unsplash.com/photo-1600718894668-940d0e4a1539?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
     background-size: cover;
     background-position: center;
     width: 947px;
@@ -110,17 +103,16 @@ h4 {
 
 .column1 {
     position: absolute;
-    left: 0em;
-    top: -1em;
-    width: 420px;
+    left: 2em;
+    top: -4em;
     height: 592px;
 }
 
 .column2 {
     position: absolute;
-    left: 38em;
-    top: 5em;
-    width: 420px;
+    left: 6em;
+    top: 3em;
+    width: 750px;
     height: 592px;
 }
 
@@ -137,7 +129,6 @@ h4 {
 #icons:hover {
     animation: shaking 500ms infinite;
 }
-
 
 
 
@@ -173,17 +164,6 @@ body.darkmode p {
 
 
 
-@keyframes shaking {
-  0% {
-    transform: rotate(2deg);
-  }
-  50% {
-    transform: rotate(-2deg);
-  }
-  100% {
-    transform: rotate(2deg);
-  }
-}
 
 
 
@@ -212,12 +192,12 @@ body.darkmode p {
 
     .column2 {
         left: 54em;
-        top: 1em;
+        top: -3em;
+        width: 400px;
     }
 
-    #icons {
-        top: -696px;
-        left: 632px;
+    .column3 {
+    display: none;
     }
 }
 
@@ -257,14 +237,15 @@ body.darkmode p {
 
     .column1 {
         left: 38em;
-        top: -1em;
-        width: 338px;
+        top: 3em;
+        width: 326px;
         text-align: center;
+        height: 0px;
     }
 
     .column2 {
-        left: 35em;
-        top: 53em;
+        left: 36em;
+        top: 16em;
         text-align: center;
     }
 
@@ -287,11 +268,11 @@ body.darkmode p {
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 3em;
         text-align: left;
         position: relative;
         top: 18px;
-        left: -7em;
+        left: -6em;
         padding: 5px;
     }
 
@@ -309,14 +290,15 @@ body.darkmode p {
 
     .column1 {
         left: 30em;
-        top: -1em;
+        top: 3em;
         width: 300px;
         text-align: left;
+        height: 0px;
     }
 
     .column2 {
-        left: 30em;
-        top: 56em;
+        left: 29em;
+        top: 15em;
         width: 300px;
         text-align: left;
     }
@@ -325,7 +307,6 @@ body.darkmode p {
         top: -456px;
         left: 473px;
     }
-    
 }
 
 
@@ -338,12 +319,12 @@ body.darkmode p {
     }
 
     .title {
-        left: 13em;
+        left: 14em;
         top: 22em;
     }
 
     h1 {
-        font-size: 2.1em;
+        font-size: 2.3em;
         text-align: left;
         position: relative;
         top: 18px;
@@ -366,15 +347,15 @@ body.darkmode p {
     .column1 {
         left: 30em;
         top: -7em;
-        width: 216px;
+        width: 300px;
         text-align: left;
         height: 0px;
     }
 
     .column2 {
         left: 30em;
-        top: 64em;
-        width: 216px;
+        top: 4em;
+        width: 224px;
         text-align: left;
     }
 

@@ -1,12 +1,20 @@
+:root {
+  --red: #ea0000;
+  --darkred: #b92323;
+  --darkcream: #ffedb3;
+  --cream: #fdffd9;
+  --green: #39914c;
+  --blackmain: #414131;
+}
+
 body {
-    background-color: #fdffd9;
+    background-color: var(--cream);
 }
 
 main {
     display: flex;
     margin: auto;
     width: 80%;
-    background-color: #fdffd9;
 }
 
 section {
@@ -30,7 +38,7 @@ h1 {
     font-family: 'Archivo Black', sans-serif;
     font-style: italic;
     font-size: 4em;
-    color: #e00000;
+    color: var(--red);
     margin: 0;
     text-align: right;
 }
@@ -39,7 +47,7 @@ h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2em;
     line-height: 38pt;
-    color: #39914c;
+    color: var(--green);
     padding: 20px;
 }
 
@@ -63,7 +71,7 @@ h4 {
 .buttons-holder {
     position: absolute;
     margin: center;
-    background-color: red;
+    background-color: var(--red);
     width: 100%;
     height: 100px;
     display: inline-flex;
@@ -74,11 +82,16 @@ h4 {
 
 .buttons {
     border: 1em;
-    background-color: #fdffd9;
+    background-color: var(--darkcream);
     flex-grow: 2;
     align-self: center;
     text-align: center;
     border-radius: 20px;
+}
+
+.buttons:hover {
+    background-color: var(--green);
+    transition: 500ms ease 300ms;
 }
 
 .image1 {
@@ -113,4 +126,229 @@ h4 {
     align-content: center;
     justify-content: space-around;
     align-items: baseline;
+}
+
+#icons {
+    background-image: url(../images/day-01.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 7em;
+    left: 9px;
+    border-radius: 50px;
+}
+
+#icons:hover {
+    animation: shaking 500ms infinite;
+}
+
+
+
+
+
+body.darkmode #icons {
+    background-image: url(../images/dark-02.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+body.darkmode .buttons-holder {
+    background-color: var(--darkred);
+}
+
+body.darkmode {
+    background-color: var(--blackmain);
+}
+
+body.darkmode p {
+    color: white;
+    text-decoration: bold;
+}
+
+body.darkmode h3 {
+    color: white;
+    text-decoration: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    h3 {
+    font-size: 0.6em;
+    padding: 12px;
+    line-height: 11pt;
+    }
+
+    .title {
+    position: absolute;
+    top: 38em;
+    left: 16em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        padding: 0em;
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding: 5px;
+        line-height: 15pt;
+    }
+
+    .image1 {
+        height: 419px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    h3 {
+    font-size: 0.6em;
+    padding: 12px;
+    line-height: 11pt;
+    }
+
+    .title {
+        top: 36em;
+        left: 8em;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.7em;
+        padding: 5px;
+        line-height: 12pt;
+    }
+
+    .image1 {
+        height: 419px;
+    }
+
+    .about {
+        display: block;
+        width: 1073px;
+        height: 510px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    h3 {
+    font-size: 0.4em;
+    padding: 12px;
+    line-height: 11pt;
+    }
+
+    .title {
+        top: 36em;
+        left: 5em;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 0.9em;
+        line-height: 15pt;
+    }
+
+    p {
+        font-size: 0.7em;
+        padding: 5px;
+        line-height: 12pt;
+    }
+
+    .image1 {
+        height: 419px;
+    }
+
+    .about {
+        display: block;
+        width: 1073px;
+        height: 527px;
+        top: 7em;
+    }
+}
+
+
+
+
+@media screen and (max-width: 300px){
+    main {
+        display: block;
+    }
+
+    h3 {
+        display: block;
+        left: -1em;
+    }
+
+    .title {
+        top: 52em;
+        left: 1em;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 0.5em;
+        line-height: 12px;
+    }
+
+    p {
+        font-size: 0.5em;
+        padding: 5px;
+        line-height: 8pt;
+    }
+
+    .image1 {
+        height: 177px;
+        width: 236px;
+        left: -1em;
+        top: 11em;
+    }
+
+    .about {
+        display: block;
+        width: 200px;
+        height: 599px;
+        left: -1em;
+        top: 11em;
+    }
+
+    .infoholder {
+        display: block;
+    }
+
+    #icons {
+        top: 7em;
+        left: 119px;
+    }
 }
