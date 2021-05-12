@@ -1,0 +1,29 @@
+body {
+	background-color: pink;
+}
+
+
+
+.img01 {
+	width: 933px;
+	height: 500px;
+	margin: auto;
+	background-image: url(./images/img01.png);
+	background-size: cover;
+}
+
+.img02 {
+	width: 933px;
+	height: 500px;
+	margin: auto;
+	background-image: url(./images/img02.png);
+	background-size: cover;
+}
+
+.img03 {
+	width: 933px;
+	height: 500px;
+	margin: auto;
+	background-image: url(./images/img03.png);
+	background-size: cover;
+}

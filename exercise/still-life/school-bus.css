@@ -17,6 +17,10 @@ body{
 
 }
 
+.bodyBus:hover {
+    background-color: red;
+}
+
 .backWindow {
     width: 600px;
     height: 150px;
